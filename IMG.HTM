@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./img.css">
+</head>
+<body id="body3">
+ 
+<h1 id="h1" align="center">Image Gallery</h1>
+ <DIV class="full-img" ID="fullImgBox">
+    <img src="./anders-jilden-AkUR27wtaxs-unsplash.jpg" alt="Wait" id="fullImg">
+ <span onclick="closeFullImg()">X</span>
+  </DIV>
+
+<div class="img-gallery">
+<img src="./anders-jilden-AkUR27wtaxs-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait">
+<img src="./benjamin-voros-phIFdC6lA4E-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait">
+
+<img src="./breno-machado-in9-n0JwgZ0-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait">
+<img src="./buzz-andersen-E4944K_4SvI-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait">
+<img src="./gaston-abascal-8F-6pXyQyLU-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait"> 
+<img src="./john-towner-3Kv48NS4WUU-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait">
+<img src="./jonatan-pie-3l3RwQdHRHg-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait">
+<img src="./boat.png" onclick="openFullImg(this.src)" alt="wait">
+<img src="./joshua-sortino-XMcoTHgNcQA-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait">
+<img src="./kalen-emsley-Bkci_8qcdvQ-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait">
+<img src="./tom-gainor-ZqLeQDjY6fY-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait"> 
+<img src="./pawel-czerwinski-6lQDFGOB1iw-unsplash.jpg" onclick="openFullImg(this.src)" alt="wait">
+</div>
+
+
+
+<script>
+  var fullImgBox=document.getElementById("fullImgBox");
+  var fullImg=document.getElementById("fullImg");
+function openFullImg(pic){
+  fullImgBox.style.display="flex";
+  fullImg.src = pic;
+}
+function closeFullImg(){
+    fullImgBox.style.display="none";
+}
+</script>
+</body>
+</html>
